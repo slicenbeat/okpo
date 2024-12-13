@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "410e4c34-ff95-4656-807b-a47088028dbb",
+		"name": "OKPO_lab5",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18641137",
+		"_collection_link": "https://lively-flare-860833.postman.co/workspace/RSCH~3128d233-905e-41cd-ac61-56799b6eb204/collection/18641137-410e4c34-ff95-4656-807b-a47088028dbb?action=share&source=collection_link&creator=18641137"
+	},
+	"item": [
+		{
+			"name": "GET all NBA teams",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						},
+						{
+							"key": "value",
+							"value": "fc796694-fd9c-4237-a1b5-8f7766003005",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.balldontlie.io/v1/teams",
+					"protocol": "https",
+					"host": [
+						"api",
+						"balldontlie",
+						"io"
+					],
+					"path": [
+						"v1",
+						"teams"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET concrete NBA team with id=5",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "fc796694-fd9c-4237-a1b5-8f7766003005",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.balldontlie.io/v1/teams/5",
+					"protocol": "https",
+					"host": [
+						"api",
+						"balldontlie",
+						"io"
+					],
+					"path": [
+						"v1",
+						"teams",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
